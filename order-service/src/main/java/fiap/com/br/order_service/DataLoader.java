@@ -18,7 +18,7 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) {
         dishRepository.saveAll(List.of(
                 Dish.builder().name("House Burger").description("Brioche bun")
-                        .price(new BigDecimal("39.90")).stock(10).build(), // promoção, id 1
+                        .price(new BigDecimal("39.90")).stock(10).build(),
                 Dish.builder().name("Margherita Pizza").description("Tomato, mozzarella and basil")
                         .price(new BigDecimal("49.90")).stock(50).build(),
                 Dish.builder().name("Veggie Bowl").description("Quinoa, grilled vegetables and hummus")
